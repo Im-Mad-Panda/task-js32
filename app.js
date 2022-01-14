@@ -1,17 +1,5 @@
-function Worker(name, surname, age, rate, days) {
-  this.name = name;
-  this.surname = surname;
-  this.age = age;
-  this.rate = rate;
-  this.days = days;
+const number1 = +prompt('Type first number');
+const number2 = +prompt('Type second number');
 
-  this.getSalary = function () {
-    if (isNaN(this.days) || isNaN(this.rate) || this.days > 31) {
-      return false;
-    }
-    if(this.days > 31){
-    return null;
-    }
-    return this.rate * this.days;
-  }
-}
+alert(number1 + '+' + number2 + ' = ' + (number1 + number2));
+
