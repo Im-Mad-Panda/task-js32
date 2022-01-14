@@ -1,17 +1,15 @@
-const weekPlan = {
-    Mon: 'Visit to stomatologist',
-    Tue: 'Got salary',
-    Wed: 'Meet friends',
-    Thu: 'Hard working',
-    Fri: 'Free day',
-    Sat: 'Go to party'
+function Cat(name, age, breed, color, isMale){
+    this.name;
+    this.age;
+    this.breed;
+    this.color;
+    this.isMale;
 }
-function getPlanning(){
-    const dayWeek = prompt(`Type the day:\nMon - for monday\nTue - thuesday\nWed - Wednesday\nThu - Thuesday\nFri - Friday\nSat - Saturday`);
+    const cat1 = new Cat('Barsik', 5, 'British', 'blue', true);
+    const cat2 = new Cat('Murka', 3, 'British', 'blue', false);
 
-    // alert(weekPlan[dayWeek] ? weekPlan[dayWeek] : 'Nothing planned for this day');
+    cat1.girfriend = cat2;
 
-    console.log(dayWeek in weekPlan ? weekPlan[dayWeek] : 'There is on such day in our plan');
+    cat1.girfriend.name
 
-}
-getPlanning();
+
