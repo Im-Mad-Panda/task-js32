@@ -1,12 +1,8 @@
-number1 = 4;
-number2 = 5;
+const PROTOCOL = 'http://';
+const SERVER_IP = 'www.google.com';
+const PORT = '80';
 
-function getDecription(){
-    return ' of these numbers'
+function createQuery(absPath){
+    const url = `${PROTOCOL}${SERVER_IP}:${PORT}${absPath}`;
+    return url
 }
-
-console.log(`Sum ${getDecription()}: ${number1} + ${number2} = ${number1 + number2}`);
-console.log(`Sub ${getDecription()}: ${number1} - ${number2} = ${number1 - number2}`);
-console.log(`Multiply ${getDecription()}: ${number1} * ${number2} = ${number1 * number2}`);
-console.log(`Divide ${getDecription()}: ${number1} / ${number2} = ${number1 / number2}`);
-
